@@ -7,13 +7,23 @@
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+<style>
+  #curson{
+    animation: blink 1s infinite;
+  }
+  @keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+</style>
 <body>  
   <header  >
     <h2>Jemish Jikadara</h2>
     <nav>
       <a href="/">Home</a>
       <a href="#about">About</a>
-      <a href="">Skills</a>
+      <a href="#skills">Skills</a>
       <a href="/projects.html">Projects</a>
       <a href="/contect.html">Contect me </a>
     </nav>
@@ -27,16 +37,16 @@
     </div>
     <div class="text ">
         <h1>Welcome to My Website</h1>
-        <p>
-           <h2>hi i am jemish</h2>
-           <h2> i am web developer</h2>
-           <br>
-           <i class="fa-brands fa-instagram icon"></i>
-           <i class="fa-brands fa-facebook icon"></i>
-           <i class="fa-brands fa-linkedin-in icon"></i>
-           <i class="fa-brands fa-github icon" ></i>
+        <p id="typing"></p>
+         <p id="typing2"></p>
+           <p>
+           
+           <a href="https://www.instagram.com/jemish_41_?igsh=OHpnNnQ3YjR4MWdv"><i  class="fa-brands fa-instagram icon"></i></a>
+           <a href="https://www.facebook.com/share/17EXyaThnN/"><i class="fa-brands fa-facebook icon"></i></a>
+           <a href="https://www.linkedin.com/in/jemish-jikadara-3340483a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in icon"></i></a>
+           <a href="https://github.com/Jemish-Jikadara"><i class="fa-brands fa-github icon" ></i></a>
         </p>
-        <button>Read More</button>
+        <a href="#about"><button class="atag"> Read More </button></a>
     </div>
     
 </section>
@@ -67,19 +77,56 @@ ability, ready to contribute effectively in an entry-level technical role. </p>
        <div class="text-box" id="htmltextbox">
           <h2>HTML</h2>
          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+          <h3>What i Know in HTML</h3>
+          <ul>
+            <li>Semantic tages proper use (header,section,article,footer)</li>
+            <li>Form & input(with validation)</li>
+            <li>Tables, lists, media (image, video, iframe)</li>
+            <li>Clean & readable code structure</li>
+            <li>SEO-friendly markup</li>
+            <li>HTML5 elements & attributes</li>
+            <li>Responsive layout with CSS ibtegration</li>
+          </ul>
+          <h3>What I Build Using HTML</h3>
+          <ul>
+            <li>Personal Portfolio Websites</li>
+            <li>Business & Servuce websites</li>
+            <li>Landing Pages</li>
+            <li>Forms (contect/Booking/Login)</li>
+            <li>Static Website Layout</li>
+          </ul>
          </p>
        </div>
     </div>
 </div>
 <br><br>
-<div class="skills">
+<div class="skills" id="skills">
     <div id="click" class="logo">
        <img src="images\css.webp" id="CSS" class="scroll-effect">
        <div class="text-box" id="csstextbox">
           <h2>css</h2>
          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+            <h3>What i Know in CSS</h3>
+          <ul>
+            <li>Box model(margin, padding, border)</li>
+            <li>Flexbox & Grid layouts</li>
+            <li>Responsive design (media queris)</li>
+            <li>Color, gradiants & shadows</li>
+            <li>Hover effects & transitions</li>
+            <li>Glassmorphims & blur effects</li>
+            <li>Animation (basic keyframes)</li>
+            <li>Positioning (reletive, absolute, fixed, sticky)</li>
+            <li>Custom buttons, cards & UI sections</li>
+            <li>Clean & reusable CSS structure</li>
+          </ul>
+          <h3>What I Build Using CSS</h3>
+          <ul>
+            <li>Responsive layouts (mobile- desktop)</li>
+            <li>Business & Servuce websites</li>
+            <li>Navigation bars & hero sections</li>
+            <li>card, button, forms & sections</li>
+            <li>smooth hover & animation effects</li>
+          </ul>
          </p>
        </div>
     </div>
@@ -91,20 +138,62 @@ ability, ready to contribute effectively in an entry-level technical role. </p>
        <div class="text-box" id="jstextbox">
           <h2>Javascript</h2>
          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+          <h3>What i Know in Javascript</h3>
+          <ul>
+            <li>Variables, data types & operators</li>
+            <li>Functionsc & scope</li>
+            <li>Conditinol statement & loops</li>
+            <li>DOM manipulation</li>
+            <li>Events handling</li>
+            <li>Form validation</li>
+            <li>ES6 features(arrow function, let/const)</li>
+            <li>Array & objects</li>
+            <li>Timers(setTimeout, setinterval)</li>
+            <li>Fatch API </li>
+            <li>Error handling</li>
+          </ul>
+          <h3>What I Build Using CSS</h3>
+          <ul>
+            <li>intrective UI elements</li>
+            <li>Form validation & user input handling</li>
+            <li>image sliders & carousels</li>
+            <li>Typing effect & animations</li>
+            <li>Dymanic content updates</li>
+            <li>Small web applications</li>
+          </ul>
+            
          </p>
        </div>
     </div>
 </div>
-<br>
-<br>
+
+<br><br>
 <div class="skills">
     <div id="click" class="logo">
        <img src="images\python.jpeg" id="python" class="scroll-effect">
         <div class="text-box" id="pytextbox">
           <h2>python</h2>
-         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+         <p>   
+              
+              <h3>what i know in python</h3>
+             <ul>
+              <li>variables, Data types & operators</li>
+              <li>conditional statements & loops</li>
+              <li>Functions & parameters</li>
+              <li>Lists, tuples, sets & dictionaries</li>  
+              <li>File handling</li>
+              <li>Exception handling</li>
+              <li>Modules & packages</li>
+              <li>Basic OOP (class, object)</li>
+              <li>Datetime & utility modules</li>
+             </ul>
+             <h3>What I Build Using Python</h3>
+             <ul>
+              <li>Console-based applications </li>
+              <li>Logic-based mini projects</li>
+              <li>Data handling scripts</li>
+              <li>Automation tasks</li>
+             </ul>
          </p>
        </div>
     </div>
@@ -116,7 +205,23 @@ ability, ready to contribute effectively in an entry-level technical role. </p>
         <div class="text-box" id="cpptextbox" class="scroll-effect">
           <h2>cpp</h2>
          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+            <h3>What I Know in C++</h3>
+            <ul>
+              <li>Variable & Data types</li>
+              <li>Control structures</li>
+              <li>Functions</li>
+              <li>Array & strings</li>
+              <li>Pointer & references</li>
+              <li>structures</li>
+              <li>Object-Oriented Programming</li>
+              <li>Basic STL(vector, map)</li>
+            </ul>
+            <h3>What I build Using C++</h3>
+            <ul>
+              <li>Console-based programs</li>
+              <li>Logic & algorithm-based problems</li>
+              <li>OOP-based mini projects</li>
+            </ul>
          </p>
        </div>
     </div>
@@ -128,7 +233,22 @@ ability, ready to contribute effectively in an entry-level technical role. </p>
         <div class="text-box" id="ctextbox" class="scroll-effect">
           <h2>c</h2>
          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+              <h3>What I Know in C</h3>
+              <ul>
+              <li>Variable & Data types</li>
+              <li>Control structures</li>
+              <li>Functions</li>
+              <li>Array & strings</li>
+              <li>Pointer</li>
+              <li>structures</li>  
+              <li>File handling (Basic)</li>
+             </ul>
+             <h3>What I Build Using C</h3>
+             <ul>
+              <li>Colsole programs</li>
+              <li>Logic preactic projects </li>
+              <li>Fundamental system-level programs</li>
+             </ul>
          </p>
        </div>
     </div>
@@ -139,7 +259,22 @@ ability, ready to contribute effectively in an entry-level technical role. </p>
         <div class="text-box" id="SQLtextbox" class="scroll-effect">
           <h2>SQL</h2>
          <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, asperiores nobis! Sequi dolorem vero in deleniti culpa labore reiciendis minus quisquam ab tenetur odit, velit sint asperiores maiores, perspiciatis nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur fuga modi ab doloremque necessitatibus tempora consequuntur culpa sunt, molestiae numquam, corrupti dignissimos aliquid itaque recusandae odio sit repudiandae et sed.
+            <h3>What I know in SQL</h3>
+            <ul>
+              <li>Database & tables</li>
+              <li>SELECT, INSERT, UPDATE, DELETE</li>
+              <li>WHERE, ORDER BY, LIMIT</li>
+              <li>joins(INNER, LEFT - basic)</li>
+              <li>Aggregate Functions(COUNT, SUM, AVG, ETC..)</li>
+              <li>Primary & forign keys</li>
+              <li>BAsic normalization concepts</li>
+            </ul>
+            <h3>What I Build Using SQL</h3>
+            <ul>
+              <li>Database schemas</li>
+              <li>CRUD operations</li>
+              <li>BAckend data handling for websites</li>
+            </ul>
          </p>
        </div>
     </div>
@@ -182,7 +317,30 @@ ability, ready to contribute effectively in an entry-level technical role. </p>
 </footer>
 
 
+<script>
+  const text = " Hi i am Jemish Jikadara.";
+  
+  let index=0;
+  function typeEffect(){
+    if (index< text.length){
+        document.getElementById("typing").innerHTML+=text.charAt(index)
+        index++;
+        setTimeout(typeEffect,100);
+    }
+  }
+  const text2 = "I am web developer.";
+   let index2=0;
+  function typeEffect2(){
+    if (index2< text2.length){
+        document.getElementById("typing2").innerHTML+=text2.charAt(index2)
+        index2++;
+        setTimeout(typeEffect2,100);
+    }
+  }
+ typeEffect();
+typeEffect2();
 
+</script>
 <script src="script.js"></script>
 </body>
 </html>
