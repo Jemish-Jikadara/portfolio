@@ -58,9 +58,10 @@
 
     <form onsubmit="return validateContactForm()">
         <input type="text" id="name" placeholder="Your Name">
+        <input typr="text" id="number" placeholder="Your Mobile Number">
         <input type="email" id="email" placeholder="Your Email">
         <textarea id="message" rows="4" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" onclick="chack()">Send Message</button>
     </form>
 </div>
 
@@ -68,9 +69,11 @@
     function validateContactForm() {
         let name = document.getElementById("name").value.trim();
         let email = document.getElementById("email").value.trim();
+        let number = document.getElementById("number").value;
         let message = document.getElementById("message").value.trim();
+        let mono="9876543210";
 
-        if (name === "" || email === "" || message === "") {
+        if (name === "" || email === "" || message === ""||number==="") {
             alert("❌ Please fill all fields!");
             return false;
         }
@@ -79,7 +82,12 @@
             alert("❌ Please enter a valid email address!");
             return false;
         }
-
+         
+        if(number.lenght===10 || number<"6000000000" || number>"9999999999"){
+            alert("❌ Plese enter a valid mobile number!");
+            return false;
+        
+    }
         alert("✅ Thank you! Your message has been sent.");
         return true;
     }
